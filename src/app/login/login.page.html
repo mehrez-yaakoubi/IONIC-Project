@@ -1,0 +1,77 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaulthref="login" text="Back" color="primary">Back</ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content fullscreen="true" slot="fixed" >
+  <div class="wave-container">
+    <div class="ion-padding">
+              <h1>Hello</h1>
+      <h4><i>Gérer vos annonces</i></h4>
+    </div>
+   
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#3880ff" fill-opacity="1" d="M0,64L120,101.3C240,139,480,213,720,202.7C960,192,1200,96,1320,48L1440,0L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path></svg>
+    </div>
+
+
+
+
+  <ion-card >
+    
+    <ion-card-content>
+
+      <form #f="ngForm" (ngSubmit)="loginFireauth(f.value)">
+        <!--div class="wrapform">
+          <ion-item>
+            <ion-label floating class="label">
+            <ion-input type="text" name="email" placeholder="Email" ngModel>
+              <ion-icon name="mail-outline"class="ion-margin"></ion-icon>
+            </ion-input>
+          </ion-label>
+          </ion-item!-->
+          <ion-item>
+            <ion-label floating>Email</ion-label>
+            <ion-input type="email" name="email" ngModel required></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label floating>Password</ion-label>
+            <ion-input type="Password" name="password" ngModel required></ion-input>
+          </ion-item>
+
+
+          <!--ion-item>
+           <ion-label floating class="label">
+            <ion-input type="password" name="password" placeholder="valid password" ngModel>
+              <ion-icon name="lock-closed" class="ion-margin"></ion-icon>
+            </ion-input>
+          </ion-label>
+          </ion-item!-->
+
+
+
+        <!--/div!-->
+
+
+        <ion-button  shape="round" type="submit" fill="solid"  ion-button class="yellow-cl">Login</ion-button>
+
+      </form>
+    </ion-card-content>
+
+    
+  </ion-card>
+  
+  
+
+
+
+
+
+</ion-content>
